@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginActivity">
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.chatapp.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <action
+        android:id="@+id/action_global_loginActivity"
+        app:destination="@id/loginActivity" />
+    <activity
+        android:id="@+id/conversationStatusActivity"
+        android:name="com.example.chatapp.ConversationStatusActivity"
+        android:label="activity_conversation_status"
+        tools:layout="@layout/activity_conversation_status" />
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.chatapp.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+</navigation>
